@@ -32,4 +32,5 @@ async def test():
 
 
 if __name__ == '__main__':
-    uvicorn.run(app, debug=True, port=int(appConfig.PORT), host='127.0.0.1')
+    print('start...........')
+    uvicorn.run(app, debug=True, port=int(appConfig.PORT), host='0.0.0.0')
