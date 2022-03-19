@@ -14,14 +14,16 @@ urls = [appConfig.TOTAL_AND_ANNUALIZED_OPP_AMOUNT_URL,
 
 
 async def call_url(session, url):
+    print(f'call{url}')
     async with session.get(url) as resp:
         r = await resp.json()
+        print(r)
         return r
 
 
 @app.route('/')
 async def test():
-    print('test...')
+    print('test 2..')
     async with aiohttp.ClientSession() as session:
         tasks = []
         for url in urls:
