@@ -1,3 +1,4 @@
 uvicorn~=0.17.6
 quart~=0.16.3
 aiohttp~=3.8.1
+python-dotenv~=0.19.2

@@ -6,6 +6,9 @@ LABEL io.k8s.description="This is an api to get the quart page" \
       io.k8s.display-name="test_quart"
 
 ENV CONFIGURATION_SETUP=development
+ENV PORT 8900
+ENV DATA_SERVICE_HOST http://50.16.125.1
+ENV DATA_SERVICE_PORT 8500
 
 WORKDIR /app
 
