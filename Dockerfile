@@ -7,7 +7,7 @@ LABEL io.k8s.description="This is an api to get the quart page" \
 
 ENV CONFIGURATION_SETUP=development
 ENV PORT 8080
-ENV DATA_SERVICE_HOST http://50.16.125.1
+ENV DATA_SERVICE_HOST http://3021d12dc67c.ngrok.io
 ENV DATA_SERVICE_PORT 8500
 
 WORKDIR /app
