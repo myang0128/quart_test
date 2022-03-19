@@ -21,15 +21,15 @@ async def call_url(session, url):
 
 @app.route('/')
 async def test():
-    '''async with aiohttp.ClientSession() as session:
+    print('test...')
+    async with aiohttp.ClientSession() as session:
         tasks = []
         for url in urls:
             tasks.append(asyncio.ensure_future(call_url(session, url)))
         result = await asyncio.gather(*tasks)
         for r in result:
             print(r)
-        return {'a': result}'''
-    return 'asdfafasfaf'
+        return {'a': result}
 
 
 if __name__ == '__main__':
