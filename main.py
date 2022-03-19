@@ -19,7 +19,7 @@ async def call_url(session, url):
         return r
 
 
-@app.route('/test')
+@app.route('/')
 async def test():
     async with aiohttp.ClientSession() as session:
         tasks = []
@@ -32,5 +32,5 @@ async def test():
 
 
 if __name__ == '__main__':
-    print('start...........')
+    print('start.......jj....')
     uvicorn.run(app, debug=True, port=int(appConfig.PORT), host='0.0.0.0')
